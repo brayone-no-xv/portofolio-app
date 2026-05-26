@@ -6,6 +6,7 @@ import TechStack from "./components/tech-stack"
 import AboutMe from "./components/about-me"
 import CallToAction from "./components/CTA"
 import FeatureProject from "./components/feature-projects"
+import MySkill from "./components/my-skill"
 
 export default function App() {
   return (
@@ -14,6 +15,7 @@ export default function App() {
       <main className="space-y-0">
         <HeroSection />
         <AboutMe />
+        <MySkill />
         <FeatureProject />
         <CarouselWithProgress />
         <TechStack />

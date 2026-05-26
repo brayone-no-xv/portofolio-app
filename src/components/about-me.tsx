@@ -275,7 +275,7 @@ export default function AboutMe() {
                 Where I learned the foundations. Klik kartu untuk melihat detail.
               </CardDescription>
             </CardHeader>
-            <CardContent className="relative z-10 grid gap-4">
+            <CardContent className="relative z-10 grid gap-4 max-h-[520px] overflow-y-auto pr-2">
               {/* Education List */}
               <div className="grid gap-3">
                 {educationList.map((edu) => (

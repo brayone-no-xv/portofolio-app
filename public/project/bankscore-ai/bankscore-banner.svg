@@ -1,0 +1,44 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0B1020" />
+      <stop offset="55%" stop-color="#101B35" />
+      <stop offset="100%" stop-color="#1A1030" />
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22C55E" />
+      <stop offset="100%" stop-color="#F59E0B" />
+    </linearGradient>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1200 260) rotate(90) scale(320)">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.45" />
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="1600" height="900" rx="36" fill="url(#bg)" />
+  <rect x="120" y="140" width="720" height="520" rx="28" fill="#0F172A" opacity="0.7" />
+  <rect x="160" y="200" width="640" height="40" rx="20" fill="#1F2937" />
+  <rect x="160" y="260" width="520" height="28" rx="14" fill="#111827" />
+  <rect x="160" y="310" width="480" height="18" rx="9" fill="#1F2937" />
+
+  <g opacity="0.9">
+    <circle cx="1150" cy="320" r="150" fill="url(#glow)" />
+    <rect x="1020" y="420" width="360" height="220" rx="26" fill="#111827" />
+    <rect x="1060" y="470" width="280" height="18" rx="9" fill="#1F2937" />
+    <rect x="1060" y="510" width="220" height="18" rx="9" fill="#1F2937" />
+    <rect x="1060" y="550" width="180" height="18" rx="9" fill="#1F2937" />
+  </g>
+
+  <path d="M340 520H640" stroke="url(#accent)" stroke-width="10" stroke-linecap="round" />
+  <path d="M340 560H540" stroke="#22C55E" stroke-width="10" stroke-linecap="round" />
+
+  <g opacity="0.8">
+    <path d="M860 180C980 120 1120 140 1240 220" stroke="#38BDF8" stroke-width="6" stroke-linecap="round" />
+    <circle cx="980" cy="160" r="10" fill="#38BDF8" />
+    <circle cx="1120" cy="190" r="10" fill="#38BDF8" />
+    <circle cx="1240" cy="220" r="10" fill="#38BDF8" />
+  </g>
+
+  <text x="180" y="520" fill="#F8FAFC" font-size="44" font-family="Arial, Helvetica, sans-serif" font-weight="700">BankScore AI</text>
+  <text x="180" y="570" fill="#94A3B8" font-size="24" font-family="Arial, Helvetica, sans-serif">Anomaly detection analytics for financial data</text>
+</svg>

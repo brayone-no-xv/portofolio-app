@@ -36,6 +36,10 @@ interface ProjectCardProps {
   demoUrl?: string;
   repoUrl?: string;
   category: "web" | "mobile" | "saas";
+  banner: {
+    src: string;
+    alt: string;
+  };
   // Detail tambahan untuk recruiter modal
   goal: string;
   userStory: string[];
@@ -73,6 +77,12 @@ export default function CardPost() {
     setIsDialogOpen(true);
   };
 
+  const bannerToneByCategory: Record<ProjectCardProps["category"], string> = {
+    web: "from-indigo-500/35 via-transparent to-cyan-500/30",
+    mobile: "from-sky-500/30 via-transparent to-emerald-500/25",
+    saas: "from-amber-400/30 via-transparent to-rose-500/25",
+  };
+
   // Data proyek portofolio dengan detail super-lengkap untuk recruiter
   const projectList: ProjectCardProps[] = [
     {
@@ -81,6 +91,10 @@ export default function CardPost() {
       description: "Aplikasi deteksi dan klasifikasi jenis sampah real-time menggunakan WebCam berbasis YOLOv11.",
       tags: ["React", "Python", "YOLOv11"],
       category: "web",
+      banner: {
+        src: "/project/civicnode-app/Screenshot%202026-04-27%20at%2018-47-58%20CivicNode%20AI.png",
+        alt: "CivicNode AI preview",
+      },
       demoUrl: "https://github.com",
       repoUrl: "https://github.com",
       goal: "Mengembangkan sistem kecerdasan buatan berbasis computer vision untuk mendeteksi, mengenali, dan mengklasifikasikan kategori sampah secara real-time dari umpan video kamera, dengan tujuan mempercepat proses pemilahan sampah mandiri bagi warga dan otomatisasi pemilahan di fasilitas daur ulang.",
@@ -106,6 +120,10 @@ export default function CardPost() {
       description: "Sistem clustering data keuangan untuk mendeteksi anomali transaksi pada sistem database Kemenkeu.",
       tags: ["Next.js", "Python", "Scikit-Learn"],
       category: "saas",
+      banner: {
+        src: "/project/bankscore-ai/bankscore-banner.svg",
+        alt: "BankScore AI preview",
+      },
       demoUrl: "https://github.com",
       repoUrl: "https://github.com",
       goal: "Membangun platform analitis cerdas menggunakan algoritma unsupervised learning (clustering) untuk mendeteksi anomali pola transaksi keuangan yang mencurigakan di database kementerian, meminimalkan potensi kecurangan (fraud) dan mempermudah proses audit keuangan negara.",
@@ -131,6 +149,10 @@ export default function CardPost() {
       description: "Portofolio digital modern yang interaktif dengan estetika premium yang memikat recruiter, menampilkan keahlian Full-Stack Web dan AI Engineering saya.",
       tags: ["React", "Tailwind CSS", "Framer Motion"],
       category: "web",
+      banner: {
+        src: "/project/portofolio/portofolio.png",
+        alt: "Portfolio website preview",
+      },
       demoUrl: "https://github.com",
       repoUrl: "https://github.com",
       goal: "Membangun portofolio digital pribadi berstandar industri dengan performa load tinggi, estetika visual premium, dan pengalaman interaktif modern (seperti glassmorphic surface dan dynamic spotlights) untuk menunjukkan kompetensi teknis saya kepada recruiter secara komprehensif.",
@@ -211,8 +233,14 @@ export default function CardPost() {
               <CardContent className="relative z-10 p-0 grow">
                 {/* Project thumbnail area */}
                 <div className="relative aspect-video overflow-hidden border-b border-white/10 bg-[#0b1020]">
-                  <div className="absolute inset-0 bg-linear-to-t from-[#05070f] via-transparent to-transparent z-10" />
-                  <div className="h-full w-full bg-linear-to-br from-indigo-500/20 via-transparent to-cyan-500/20 transition-transform duration-500 group-hover:scale-105 group-hover:-translate-y-1" />
+                  <img
+                    src={project.banner.src}
+                    alt={project.banner.alt}
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105 group-hover:-translate-y-1"
+                    loading="lazy"
+                  />
+                  <div className={`absolute inset-0 bg-linear-to-br ${bannerToneByCategory[project.category]} opacity-80`} />
+                  <div className="absolute inset-0 bg-linear-to-t from-[#05070f] via-transparent to-transparent" />
                   
                   {/* Click indicator button */}
                   <div className="absolute top-3 right-3 z-20 flex h-8 w-8 items-center justify-center rounded-full bg-slate-950/80 border border-white/10 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
