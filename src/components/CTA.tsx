@@ -46,7 +46,7 @@ export default function CallToAction() {
               size="lg"
               className="group w-full bg-linear-to-r from-indigo-500 to-cyan-500 font-semibold text-slate-950 transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_35px_rgba(99,102,241,0.45)] sm:w-auto"
             >
-              <a href="mailto:your-email@example.com">
+              <a href="mailto:ascreedonly@gmail.com">
                 <Mail className="mr-2 h-4 w-4" />
                 Send Me an Email
                 <ArrowUpRight className="ml-2 h-4 w-4 transition-transform duration-300 group-hover:translate-x-1 group-hover:-translate-y-1" />

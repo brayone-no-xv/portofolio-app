@@ -96,7 +96,7 @@ export default function CardPost() {
         alt: "CivicNode AI preview",
       },
       demoUrl: "https://github.com",
-      repoUrl: "https://github.com",
+      repoUrl: "https://github.com/civicnode-app",
       goal: "Mengembangkan sistem kecerdasan buatan berbasis computer vision untuk mendeteksi, mengenali, dan mengklasifikasikan kategori sampah secara real-time dari umpan video kamera, dengan tujuan mempercepat proses pemilahan sampah mandiri bagi warga dan otomatisasi pemilahan di fasilitas daur ulang.",
       userStory: [
         "Sebagai seorang pengelola fasilitas daur ulang, saya ingin sistem mendeteksi jenis sampah secara otomatis dan instan dari umpan video kamera, sehingga proses pemilahan dapat dipercepat tanpa kebingungan manual.",
@@ -125,7 +125,7 @@ export default function CardPost() {
         alt: "BankScore AI preview",
       },
       demoUrl: "https://github.com",
-      repoUrl: "https://github.com",
+      repoUrl: "https://github.com/Capstone-Asah-Team-A25-CS091",
       goal: "Membangun platform analitis cerdas menggunakan algoritma unsupervised learning (clustering) untuk mendeteksi anomali pola transaksi keuangan yang mencurigakan di database kementerian, meminimalkan potensi kecurangan (fraud) dan mempermudah proses audit keuangan negara.",
       userStory: [
         "Sebagai seorang auditor kepatuhan keuangan di Kemenkeu, saya ingin mengelompokkan transaksi otomatis berdasarkan kemiripan pola agar saya dapat dengan cepat mengidentifikasi klaster transaksi dengan skor risiko anomali tinggi.",
@@ -153,8 +153,8 @@ export default function CardPost() {
         src: "/project/portofolio/portofolio.png",
         alt: "Portfolio website preview",
       },
-      demoUrl: "https://github.com",
-      repoUrl: "https://github.com",
+      demoUrl: "https://portofolio-app-woad.vercel.app/",
+      repoUrl: "https://github.com/brayone-no-xv/portofolio-app",
       goal: "Membangun portofolio digital pribadi berstandar industri dengan performa load tinggi, estetika visual premium, dan pengalaman interaktif modern (seperti glassmorphic surface dan dynamic spotlights) untuk menunjukkan kompetensi teknis saya kepada recruiter secara komprehensif.",
       userStory: [
         "Sebagai seorang perekrut teknologi (recruiter), saya ingin melihat deskripsi proyek yang mendalam, pengalaman relevan, dan bukti kompetensi (sertifikat) secara terintegrasi dan cepat di satu tempat, dengan interaksi visual yang mulus.",
